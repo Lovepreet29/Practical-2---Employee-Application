@@ -13,15 +13,46 @@
       }
 
       .main-div{
-        text-align: center; 
-        margin-top: 17%;
+        color: white;
+  border: 2px solid black;
+  width: 1024px;
+  margin: 20px;
+  padding: 20px;
+  background-color: darkolivegreen;
+      }
+h1{
+  color: blue;
+            text-transform: uppercase;
+        font-size: 2.5rem;
+}
+      label{
+        color: darkgoldenrod;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        padding-right: 15px;
+      }
+      input{
+        width: 180px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      button{
+        font-size: 1rem;
+    color: darkred;
+    border: 2px solid black;
+    background-color: cadetblue;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
       }
     </style>
+
     <div class="main-div">
       <h1>Account Login</h1>
       <form id="login" class="login" method="POST" action="/login">
         <div class="form-control">
-          <label for="email">account email</label>
+          <label for="email">Account Email</label>
           <input
           required
             id="email"
@@ -31,17 +62,17 @@
           />
         </div>
         <div class="form-control">
-            <label for="password">account password</label>
+            <label for="password">Account Password</label>
             <input
             required
               id="password"
               name="password"
               type="password"
-              placeholder="account password"
+              placeholder="Account Password"
             />
           </div>
           <div class="form-control">
-              <button type=submit>login</button>
+              <button type=submit>LOGIN</button>
           </div>
       </form>
     </div>
